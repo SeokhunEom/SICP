@@ -1,5 +1,9 @@
+function abs(x) {
+  return x < 0 ? -x : x;
+}
+
 function is_good_enough(guess, x) {
-  return Math.abs(guess * guess * guess - x) < 0.001;
+  return abs(guess * guess * guess - x) < 0.001;
 }
 
 function improve(guess, x) {
@@ -16,4 +20,4 @@ function cube_root(x) {
   return cube_root_iter(1.0, x);
 }
 
-console.log(cube_root(8));
+cube_root(8);

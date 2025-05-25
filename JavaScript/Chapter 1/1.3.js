@@ -1,18 +1,29 @@
 function square(a) {
-  return a ** 2;
+  return a * a;
 }
 
-function sumAll(...args) {
-  return args.reduce((acc, val) => acc + val, 0);
+function add3(a, b, c) {
+  return a + b + c;
 }
 
-function minus(a, b) {
+function minus2(a, b) {
   return a - b;
 }
 
-function func(a, b, c) {
-  return minus(
-    sumAll(square(a), square(b), square(c)),
-    square(Math.min(a, b, c))
-  );
+function min3(a, b, c) {
+  if (a <= b && a <= c) {
+    return a;
+  } else {
+    if (b <= a && b <= c) {
+      return b;
+    } else {
+      return c;
+    }
+  }
 }
+
+function func(a, b, c) {
+  return minus2(add3(square(a), square(b), square(c)), square(min3(a, b, c)));
+}
+
+func(3, 1, 2); // 13

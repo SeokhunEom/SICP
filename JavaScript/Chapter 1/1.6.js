@@ -2,8 +2,12 @@ function conditional(predicate, thenClause, elseClause) {
   return predicate ? thenClause : elseClause;
 }
 
+function abs(x) {
+  return x < 0 ? -x : x;
+}
+
 function is_good_enough(guess, x) {
-  return Math.abs(guess * guess - x) < 0.001;
+  return abs(guess * guess - x) < 0.001;
 }
 
 function improve(guess, x) {
@@ -22,7 +26,7 @@ function sqrt(x) {
   return sqrt_iter(1.0, x);
 }
 
-console.log(sqrt(9));
+sqrt(9);
 
 // infinite loop
 // because sqrt_iter is called before conditional is evaluated
