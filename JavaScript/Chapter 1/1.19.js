@@ -19,4 +19,4 @@ function fib(n) {
   return iter(1, 0, 0, 1, n);
 }
 
-console.log(fib(10)); // 55
+fib(10); // 55

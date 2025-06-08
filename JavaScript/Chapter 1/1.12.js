@@ -1,7 +1,13 @@
 function pascalsTriangle(row, col) {
-  if (row < 0 || col < 0 || col > row) return 0;
-  if (col === 0 || col === row) return 1;
-  return pascalsTriangle(row - 1, col - 1) + pascalsTriangle(row - 1, col);
+  if (row < 0 || col < 0 || col > row) {
+    return 0;
+  } else {
+    if (col === 0 || col === row) {
+      return 1;
+    } else {
+      return pascalsTriangle(row - 1, col - 1) + pascalsTriangle(row - 1, col);
+    }
+  }
 }
 
-console.log(pascalsTriangle(5, 2)); // 10
+pascalsTriangle(5, 2); // 10

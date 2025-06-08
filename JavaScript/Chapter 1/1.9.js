@@ -1,6 +1,16 @@
+function inc(x) {
+  return x + 1;
+}
+
+function dec(x) {
+  return x - 1;
+}
+
 function plus(a, b) {
   return a === 0 ? b : inc(plus(dec(a), b));
 }
+
+plus(4, 5);
 // recursive
 // plus(4, 5)
 // inc(plus(3, 5))
@@ -23,3 +33,4 @@ function plus2(a, b) {
 // plus2(1, 8)
 // plus2(0, 9)
 // 9
+plus2(4, 5);

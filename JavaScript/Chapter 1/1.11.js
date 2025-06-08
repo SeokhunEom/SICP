@@ -11,5 +11,5 @@ function f2(n) {
   return iter(2, 1, 0, n);
 }
 
-console.log(f1(10)); // 1892
-console.log(f2(10)); // 1892
+f1(10); // 1892
+f2(10); // 1892

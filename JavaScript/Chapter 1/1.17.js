@@ -16,4 +16,4 @@ function fast_times(a, b) {
   }
 }
 
-console.log(fast_times(5, 7)); // 35
+fast_times(5, 7); // 35

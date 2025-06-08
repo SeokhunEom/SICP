@@ -1,3 +1,7 @@
+function abs(x) {
+  return x < 0 ? -x : x;
+}
+
 function cube(x) {
   return x * x * x;
 }

@@ -6,7 +6,7 @@ function gcd(a, b) {
   }
 }
 
-console.log(gcd(206, 40)); // 2
+gcd(206, 40); // 2
 
 // normal-order: remainder is called 25 times
 // applicative-order: remainder is called 4 times

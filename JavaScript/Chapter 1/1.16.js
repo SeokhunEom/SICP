@@ -16,4 +16,4 @@ function fast_expt(b, n) {
   return iter(1, b, n);
 }
 
-console.log(fast_expt(2, 10)); // 1024
+fast_expt(2, 10); // 1024

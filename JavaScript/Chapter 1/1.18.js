@@ -20,4 +20,4 @@ function fastMultiply(a, b) {
   return iter(a, b, 0);
 }
 
-console.log(fastMultiply(5, 7)); // 35
+fastMultiply(5, 7); // 35
