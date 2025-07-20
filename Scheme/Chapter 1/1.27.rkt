@@ -1,0 +1,6 @@
+(define (fermat-all? n)
+    (define (iter a)
+        (or (>= a n)
+            (and (= (expmod a n n) a)
+                 (iter (+ a 1)))))
+             (iter 1))
